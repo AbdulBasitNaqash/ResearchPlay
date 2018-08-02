@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,13 +17,46 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JNH-zU-1yU">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="if_devices_joystick-06_1287542.png" translatesAutoresizingMaskIntoConstraints="NO" id="2MV-ld-R9l">
+                                        <rect key="frame" x="59" y="192" width="256" height="256"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Play With Research..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b3J-NL-eiC">
+                                        <rect key="frame" x="76" y="496" width="223" height="32"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="22"/>
+                                        <color key="textColor" red="0.21176470588235294" green="0.27843137254901962" blue="0.30588235294117649" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="b3J-NL-eiC" firstAttribute="centerX" secondItem="JNH-zU-1yU" secondAttribute="centerX" id="3DS-OL-wbm"/>
+                                    <constraint firstItem="2MV-ld-R9l" firstAttribute="centerY" secondItem="JNH-zU-1yU" secondAttribute="centerY" constant="-13.5" id="LOq-yQ-GRu"/>
+                                    <constraint firstItem="2MV-ld-R9l" firstAttribute="centerX" secondItem="JNH-zU-1yU" secondAttribute="centerX" id="W83-Lj-TbQ"/>
+                                    <constraint firstItem="b3J-NL-eiC" firstAttribute="top" secondItem="2MV-ld-R9l" secondAttribute="bottom" constant="48" id="s4r-8g-6Dg"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="FmQ-8E-cRq"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="JNH-zU-1yU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="QfH-ad-VXX"/>
+                            <constraint firstItem="JNH-zU-1yU" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="fjh-0R-4VN"/>
+                            <constraint firstItem="JNH-zU-1yU" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="hSp-dl-raO"/>
+                            <constraint firstItem="JNH-zU-1yU" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="r9p-CL-rX7"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="-31" y="220"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="if_devices_joystick-06_1287542.png" width="256" height="256"/>
+    </resources>
 </document>
